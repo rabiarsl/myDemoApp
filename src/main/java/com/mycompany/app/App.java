@@ -16,6 +16,8 @@ public class App
     public static boolean arrayOperation(ArrayList<Integer> first,char operator,ArrayList<Integer> second,ArrayList<Integer> result) {
       if (first==null || second==null || result==null)
         return false;
+      if (first.size()==0 || second.size()==0 || result.size()==0)
+        return false;
       if (operator!='+' && operator!='-' && operator!='*' && operator!='/')
         return false;
       if (first.size()!=second.size() || first.size()!=result.size())
