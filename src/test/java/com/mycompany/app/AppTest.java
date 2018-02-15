@@ -43,17 +43,17 @@ public class AppTest
     public void isFirstArrayNull() {
         ArrayList<Integer> array1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
         ArrayList<Integer> array2 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 5));
-        assertFalse(new App().arrayOperation(null,'+',array1,array2);
+        assertFalse(new App().arrayOperation(null,'+',array1,array2));
     }
     public void isSecondArrayNull() {
         ArrayList<Integer> array1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
         ArrayList<Integer> array2 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 5));
-        assertFalse(new App().arrayOperation(array1,'+',null,array2);
+        assertFalse(new App().arrayOperation(array1,'+',null,array2));
     }
-    public void isSecondArrayNull() {
+    public void isResultArrayNull() {
         ArrayList<Integer> array1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
         ArrayList<Integer> array2 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 5));
-        assertFalse(new App().arrayOperation(array2,'+',array1,null);
+        assertFalse(new App().arrayOperation(array2,'+',array1,null));
     }
 
 }
