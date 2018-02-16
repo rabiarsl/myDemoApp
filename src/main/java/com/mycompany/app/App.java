@@ -24,8 +24,11 @@ public class App
         return false;
       for (int i=0;i<first.size();i++){
         if (operator=='+'){
-          if (first.get(i)+second.get(i)!=result.get(i))
+          if (first.get(i)+second.get(i)!=result.get(i)){
+            System.out.println(first.get(i)+second.get(i));
+            System.out.println(result);
             return false;
+          }
         }
         else if (operator=='-'){
           if (first.get(i)-second.get(i)!=result.get(i))
@@ -64,7 +67,11 @@ public class App
           }
           
           String input2 = req.queryParams("input2").replaceAll("\\s","");
-          char operator = input2.charAt(0);
+          char operator;
+          if (input2.length()!=0)
+            operator = input2.charAt(0);
+          else
+            operator = '%' ;
 
           String input3 = req.queryParams("input3");  
           java.util.Scanner sc3 = new java.util.Scanner(input3);
