@@ -117,9 +117,9 @@ public class AppTest
         assertFalse(new App().arrayOperation(array1,'/',array2,array3));
     }
     public void testCorrectAdditionResult(){
-        ArrayList<Integer> array1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4));
-        ArrayList<Integer> array2 = new ArrayList<Integer>(Arrays.asList(1,2,0,4));
-        ArrayList<Integer> array3 = new ArrayList<Integer>(Arrays.asList(2,4,3,8));
+        ArrayList<Integer> array1 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4,5));
+        ArrayList<Integer> array2 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
+        ArrayList<Integer> array3 = new ArrayList<Integer>(Arrays.asList(2,4,6,8,10));
         assertTrue(new App().arrayOperation(array1,'+',array2,array3));
     }
     public void testCorrectSubtractionResult(){
